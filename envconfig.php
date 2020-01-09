@@ -1,5 +1,10 @@
 <?php
 
+// Disallow direct access to this file for security reasons
+if (!defined("IN_MYBB")) {
+    die("Direct initialization of this file is not allowed.");
+}
+
 // use priority 0 for these one so we can adjust settings before other hooks run
 $plugins->add_hook('global_start', 'envconfig_start', 0);
 $plugins->add_hook('admin_load', 'envconfig_admin_load', 0);
