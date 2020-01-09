@@ -27,7 +27,7 @@ services:
     volumes:
       - ./mybb:/var/www/html
     environment:
-      - MYBB_SETTINGS_BBURL=http://forum.localhost:8080
+      - MYBB_SETTINGS_BBURL=http://forum.localhost:8070
       - MYBB_SETTINGS_COOKIEDOMAIN=.forum.localhost
 ```
 
